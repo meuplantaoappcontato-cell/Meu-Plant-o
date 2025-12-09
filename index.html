@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -11,10 +10,10 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <div class="logo-pin">+</div>
+        <div class="logo-pin" aria-hidden="true">+</div>
         <div class="brand-text">
           <h1>Meu Plantão</h1>
-          <p class="tag">Conectando médicos e plantões em tempo real</p>
+          <p class="tag">Plataforma para preencher plantões rapidamente</p>
         </div>
       </div>
       <nav class="nav">
@@ -28,25 +27,25 @@
   <main class="hero">
     <div class="container hero-inner">
       <section class="hero-left">
-        <h2>Encontre plantões perto de você — rápido e seguro</h2>
-        <p>Meu Plantão ajuda clínicas a preencher escalas e médicos a encontrar plantões por valor, distância e especialidade.</p>
+        <h2>Preencha plantões em minutos. Confiança, rapidez e controle.</h2>
+        <p class="lead">Meu Plantão conecta clínicas e hospitais a médicos disponíveis por localização, especialidade e valor — tudo em uma plataforma segura e simples.</p>
         <div class="cta">
           <a class="btn primary" href="#clinicas">Sou Clínica — Quero testar</a>
           <a class="btn outline" href="#profissionais">Sou Profissional</a>
         </div>
 
         <div class="benefits card">
-          <h3>Benefícios para clínicas</h3>
+          <h3>Benefícios imediatos</h3>
           <ul>
-            <li>Fechamento rápido de plantões</li>
+            <li>Preenchimento rápido de plantões</li>
             <li>Redução de faltas de última hora</li>
-            <li>Painel simples e relatórios</li>
+            <li>Painel simples e relatórios operacionais</li>
           </ul>
         </div>
       </section>
 
-      <section class="hero-right card map-proto">
-        <div class="map-placeholder">[Mapa interativo — protótipo]</div>
+      <section class="hero-right card map-proto" aria-hidden="true">
+        <div class="map-placeholder">Mapa interativo — protótipo</div>
 
         <div class="listings">
           <article class="listing"><div><strong>Clínica Centro</strong><div class="meta">Urgência • 2,3 km</div></div><div class="price">R$ 750 • 12h</div></article>
@@ -57,43 +56,46 @@
   </main>
 
   <section id="clinicas" class="container features">
-    <div class="card">
-      <h3>Como funciona para clínicas</h3>
-      <ol>
-        <li>Publicar plantão: especialidade, horário e valor</li>
-        <li>Médicos verificados recebem notificação</li>
-        <li>Aceitar → confirmar → registrar</li>
-      </ol>
+    <div class="card feature">
+      <h3>Para Clínicas</h3>
+      <p>Publique plantões, escolha valores, e confirme profissionais em segundos. Menos telefonemas, mais eficiência.</p>
+      <ul>
+        <li>Publicação simples de plantões</li>
+        <li>Notificações para médicos próximos</li>
+        <li>Relatórios e histórico</li>
+      </ul>
     </div>
 
-    <div class="card">
-      <h3>Segurança e confiabilidade</h3>
-      <ul>
-        <li>Verificação de CRM</li>
-        <li>Confirmação dupla</li>
-        <li>Logs e histórico completo</li>
-      </ul>
+    <div class="card feature">
+      <h3>Segurança & Controle</h3>
+      <p>Verificação de CRM, confirmação dupla e histórico completo para reduzir riscos operacionais.</p>
     </div>
   </section>
 
   <section id="profissionais" class="container features">
-    <div class="card">
-      <h3>Para profissionais</h3>
+    <div class="card feature">
+      <h3>Para Profissionais</h3>
+      <p>Encontre plantões por proximidade, valor e especialidade. Ideal para quem viaja ou busca renda extra.</p>
       <ul>
-        <li>Filtrar por distância, especialidade e valor</li>
-        <li>Aceitar plantões com um clique</li>
-        <li>Histórico e pagamento (versão 2.0)</li>
+        <li>Filtros por distância e especialidade</li>
+        <li>Histórico de plantões realizados</li>
+        <li>Perfil verificado</li>
       </ul>
     </div>
-    <div class="card">
-      <h3>Modelos de cobrança</h3>
-      <p>Gratuito na fase inicial. Planos e taxa por plantão a partir da versão validada.</p>
+    <div class="card feature">
+      <h3>Como funciona</h3>
+      <ol>
+        <li>Clínica publica → Médico aceita → Clínica confirma</li>
+        <li>Pagamento e comprovantes (versão 2.0)</li>
+        <li>Avaliação mútua e histórico</li>
+      </ol>
     </div>
   </section>
 
   <section id="contato" class="container contact card">
     <h3>Fale conosco</h3>
-    <p>Email: contato@meuplantao.com • WhatsApp: (xx) xxxx-xxxx</p>
+    <p>Estamos recrutando clínicas parceiras em Pelotas para a fase beta.</p>
+    <p><strong>Email:</strong> meuplantaoapp.contato@gmail.com</p>
     <form id="leadForm">
       <input name="nome" placeholder="Nome da clínica" required />
       <input name="email" placeholder="Email" required />
