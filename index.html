@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meu Plantão — Conectando médicos e plantões</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-pin">+</div>
+        <div class="brand-text">
+          <h1>Meu Plantão</h1>
+          <p class="tag">Conectando médicos e plantões em tempo real</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#clinicas">Para Clínicas</a>
+        <a href="#profissionais">Para Profissionais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero-inner">
+      <section class="hero-left">
+        <h2>Encontre plantões perto de você — rápido e seguro</h2>
+        <p>Meu Plantão ajuda clínicas a preencher escalas e médicos a encontrar plantões por valor, distância e especialidade.</p>
+        <div class="cta">
+          <a class="btn primary" href="#clinicas">Sou Clínica — Quero testar</a>
+          <a class="btn outline" href="#profissionais">Sou Profissional</a>
+        </div>
+
+        <div class="benefits card">
+          <h3>Benefícios para clínicas</h3>
+          <ul>
+            <li>Fechamento rápido de plantões</li>
+            <li>Redução de faltas de última hora</li>
+            <li>Painel simples e relatórios</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hero-right card map-proto">
+        <div class="map-placeholder">[Mapa interativo — protótipo]</div>
+
+        <div class="listings">
+          <article class="listing"><div><strong>Clínica Centro</strong><div class="meta">Urgência • 2,3 km</div></div><div class="price">R$ 750 • 12h</div></article>
+          <article class="listing"><div><strong>Laboratório Imagem</strong><div class="meta">Radiologia • 3,2 km</div></div><div class="price">R$ 420 • 6h</div></article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section id="clinicas" class="container features">
+    <div class="card">
+      <h3>Como funciona para clínicas</h3>
+      <ol>
+        <li>Publicar plantão: especialidade, horário e valor</li>
+        <li>Médicos verificados recebem notificação</li>
+        <li>Aceitar → confirmar → registrar</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>Segurança e confiabilidade</h3>
+      <ul>
+        <li>Verificação de CRM</li>
+        <li>Confirmação dupla</li>
+        <li>Logs e histórico completo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="profissionais" class="container features">
+    <div class="card">
+      <h3>Para profissionais</h3>
+      <ul>
+        <li>Filtrar por distância, especialidade e valor</li>
+        <li>Aceitar plantões com um clique</li>
+        <li>Histórico e pagamento (versão 2.0)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Modelos de cobrança</h3>
+      <p>Gratuito na fase inicial. Planos e taxa por plantão a partir da versão validada.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="container contact card">
+    <h3>Fale conosco</h3>
+    <p>Email: contato@meuplantao.com • WhatsApp: (xx) xxxx-xxxx</p>
+    <form id="leadForm">
+      <input name="nome" placeholder="Nome da clínica" required />
+      <input name="email" placeholder="Email" required />
+      <input name="telefone" placeholder="Telefone" />
+      <button class="btn primary" type="submit">Quero participar da fase beta</button>
+    </form>
+    <p class="muted">Ao enviar, você concorda em ser contactado para fins de teste e validação.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Meu Plantão — Conectando médicos e plantões</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
