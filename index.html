@@ -92,16 +92,28 @@
     </div>
   </section>
 
-  <section id="contato" class="container contact card">
-    <h3>Fale conosco</h3>
-    <p>Estamos recrutando clínicas parceiras em Pelotas para a fase beta.</p>
-    <p><strong>Email:</strong> meuplantaoapp.contato@gmail.com</p>
-    <form id="leadForm">
-      <input name="nome" placeholder="Nome da clínica" required />
-      <input name="email" placeholder="Email" required />
-      <input name="telefone" placeholder="Telefone" />
-      <button class="btn primary" type="submit">Quero participar da fase beta</button>
-    </form>
+ <section id="contato" class="container contact card">
+  <h3>Fale conosco</h3>
+  <p>Estamos recrutando clínicas parceiras em Pelotas para a fase beta.</p>
+  <p><strong>Email:</strong> meuplantaoapp.contato@gmail.com</p>
+
+  <form 
+    action="https://formsubmit.co/meuplantaoapp.contato@gmail.com"
+    method="POST"
+  >
+    <!-- Configurações FormSubmit -->
+    <input type="hidden" name="_subject" value="Nova clínica interessada no Meu Plantão!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input name="nome" placeholder="Nome da clínica" required />
+    <input name="email" placeholder="Email" type="email" required />
+    <input name="telefone" placeholder="Telefone" />
+
+    <button class="btn primary" type="submit">Quero participar da fase beta</button>
+  </form>
+</section>
+
     <p class="muted">Ao enviar, você concorda em ser contactado para fins de teste e validação.</p>
   </section>
 
